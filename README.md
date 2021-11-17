@@ -15,6 +15,7 @@
     - [Partition disk](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#server-structure)
     - [Packages & services](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#packages-and-services)
     - [SSH connection](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#connection-to-vm-with-ssh)
+    - [Hostname change](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#change-hostname)
 
 ## [Services](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md)
 - [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#ssh)
@@ -24,6 +25,9 @@
 ## [User](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md)
 - [Sudo](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#add-sudo)
 - [Password policy](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#password-policy)
+- [Create user](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#create-user-and-group)
+- [Create group](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#create-user-and-group)
+- [Sudoers](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#configuring-sudoers-group)
 
 ## [Bonus](https://github.com/MarJC5/Born2beroot/blob/main/doc/BONUS.md)
 - [LVM](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#server-structure)
