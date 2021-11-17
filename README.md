@@ -6,9 +6,24 @@
     </h4>
 </h1>
 
-## [Subject](https://github.com/MarJC5/Born2beroot/blob/main/fr.subject.pdf)
 ## [Installation](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md)
-## [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SSH.md)
-## [UWF](https://github.com/MarJC5/Born2beroot/blob/main/doc/UWF.md)
+- [VirtualBox configuration](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#virtualbox---configuration)
+    - [Add new VM](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#add-new-vm) 
+    - [Add ISO](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#add-iso)
+- [Debian configuration](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#debian---configuration)
+    - [Server details](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#server-details)
+    - [Partition disk](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#server-structure)
+    - [Packages & services](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#packages-and-services)
+    - [SSH connection](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#connection-to-vm-with-ssh)
+
+## [Services](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md)
+- [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#ssh)
+- [UFW](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#ufw)
+- [libpam-pwquality](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#libpam-pwquality)
+
 ## [User](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md)
+- [Sudo](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#add-sudo)
+- [Password policy](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#password-policy)
+
 ## [Bonus](https://github.com/MarJC5/Born2beroot/blob/main/doc/BONUS.md)
+- [LVM](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#server-structure)
