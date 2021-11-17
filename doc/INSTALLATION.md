@@ -35,7 +35,7 @@ The ISO is simply the OS Image, for this project Debian is used.
 |--|--|
 | Name | Born2beroot-jmartin |
 | RAM | 1024MB |
-| Storage | 32GB |
+| Storage | 31GB |
 | OS | Debian 11.1.0-amd64 |
 | Interface | No graphic |
 
@@ -69,8 +69,9 @@ To create partitions proceed the following:
 
 1. After the disk partition it request to add extra media (apt) and select de.debian.org
 2. As we want the minimum of services we must unselect all in the software selection menu.
-3. Install the GRUB boot loader select "yes" and choos /dev/sda
+3. Install the GRUB boot loader select "yes" and choose /dev/sda
+4. Finish the installation
 
 | Name | Description |
 |--|--|
-|||
+| [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SSH.md) | With Secure Shell (SSH) you can establish a secure connection between your computer and the server where your website is located. |
