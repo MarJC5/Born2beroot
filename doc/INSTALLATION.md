@@ -79,8 +79,8 @@ lsblk
 
 | Name | Description |
 |--|--|
-| [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#SSH) | With Secure Shell (SSH) you can establish a secure connection between your computer and the server where your website is located. |
-| [UFW](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#UFW) | Uncomplicated Firewall, is an interface to iptables that is geared towards simplifying the process of configuring a firewall. |
+| [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#ssh) | With Secure Shell (SSH) you can establish a secure connection between your computer and the server where your website is located. |
+| [UFW](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#ufw) | Uncomplicated Firewall, is an interface to iptables that is geared towards simplifying the process of configuring a firewall. |
 | [libpam-pwquality](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#libpam-pwqality) | Provide common functions for password quality checking and also scoring them based on their apparent randomness. |
 
 ### Connection to VM with SSH
