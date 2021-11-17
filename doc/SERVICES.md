@@ -67,3 +67,13 @@ Installing password quality checking library with:
 sudo apt-get install libpam-pwquality
 ```
 
+## Crontab
+
+A crontab file contains instructions for the cron(8) daemon in the following simplified manner: “run this command at this time on this date”
+
+To install ``Crontab`` run:
+
+```shell
+sudo apt-get update -y
+sudo apt-get install -y net-tools
+```
