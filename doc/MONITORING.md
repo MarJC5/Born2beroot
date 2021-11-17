@@ -1,5 +1,6 @@
 # Monitoring
 
+## Task
 The script should always be able to display the following information:
 - The architecture of your operating system and its kernel version.
 - The number of physical processors.
