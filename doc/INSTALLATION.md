@@ -49,10 +49,9 @@ The ISO is simply the OS Image, for this project Debian is used.
 | sda5 | crypt |
 
 To create partitions proceed the following:
-1. Select "Guided - use entire disk" and delete all current partition
-2. Create manualy primary part1, 2, 3
-3. Setup Crypted disk and select part 3
-4. Create manualy LVM by selecting "Create logical volume"
+1. Select "Guided - use entire disk and set up encrypted LVM" and delete all current partition
+2. Setup Crypted disk, just delete all logical part in sda5
+3. Create manualy LVM by selecting "Create logical volume"
     - sda 30.8G
         - sda1 500M
         - sda2 1K
@@ -65,13 +64,30 @@ To create partitions proceed the following:
             - LVMGroup-tmp      3G     /tmp
             - LVMGroup-var--log 4G /var/log
 
+To see all the partition run:
+
+```shell
+lsblk
+```
+
 ### Packages and services
 
 1. After the disk partition it request to add extra media (apt) and select de.debian.org
-2. As we want the minimum of services we must unselect all in the software selection menu.
+2. As we want the minimum of services we must only select SSH in the software selection menu.
 3. Install the GRUB boot loader select "yes" and choose /dev/sda
 4. Finish the installation
 
 | Name | Description |
 |--|--|
-| [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SSH.md) | With Secure Shell (SSH) you can establish a secure connection between your computer and the server where your website is located. |
+| [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#SSH) | With Secure Shell (SSH) you can establish a secure connection between your computer and the server where your website is located. |
+| [UFW](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#UFW) | Uncomplicated Firewall, is an interface to iptables that is geared towards simplifying the process of configuring a firewall. |
+| [libpam-pwquality](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#libpam-pwqality) | Provide common functions for password quality checking and also scoring them based on their apparent randomness. |
+
+### Connection to VM with SSH
+Add forward rule for VirtualBox
+
+1. Go to VirtualBox-> Choose the VM->Select Settings
+2. Choose “Network”-> “Adapter 1"->”Advanced”->”Port Forwarding”
+3. Add the rule: TCP 4242 4242
+4. Restart ssh service ``sudo systemctl restart ssh`` and check the service status ``sudo service sshd status``
+5. Connect to ssh with ``ssh your_username@127.0.0.1 -p 4242`` (``exit`` to disconnect)
