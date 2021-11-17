@@ -91,3 +91,26 @@ Add forward rule for VirtualBox
 3. Add the rule: TCP 4242 4242
 4. Restart ssh service ``sudo systemctl restart ssh`` and check the service status ``sudo service sshd status``
 5. Connect to ssh with ``ssh your_username@127.0.0.1 -p 4242`` (``exit`` to disconnect)
+
+### Change hostname
+
+To display current hostname and server info run:
+
+```shell
+hostnamectl
+```
+
+Changer host name:
+
+```shell
+hostnamectl set-hostname <new_hostname>
+```
+
+Don't forget to change ``/etc/hosts`` file:
+
+```nano
+127.0.0.1       localhost
+127.0.0.1       new_hostname
+```
+
+The reboot and check the change.

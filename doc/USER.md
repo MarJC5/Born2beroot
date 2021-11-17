@@ -86,3 +86,64 @@ Change it like this:(max 30 days, min number of days(2) allowed before the modif
 
 3. Reboot to apply all changes
 
+## Create ``user`` and ``group``
+
+Create a new user ``group`` is very easy:
+
+```shell
+sudo groupadd <group_name>
+getent group #check if group is created
+```
+
+Create a new user is similar:
+
+```shell
+sudo adduser <user_name>
+```
+
+To check all the local user run:
+
+```shell
+cut -d: -f1 /etc/passwd
+```
+
+Add user to a specific group:
+
+```shell
+sudo usermod -aG <group_name> <user_name>
+getent group <group_name> #check if the user is in the group
+```
+
+Check all the user group run:
+
+```shell
+groups
+```
+
+Check if the current status of user password, last change etc:
+```shell
+chage -l <user_name>
+```
+
+## Configuring sudoers group
+
+- Authentication using sudo will be limited to 3 tries in case of password wrong.
+- A message of your choice is displayed in the event of an error due to a wrong password when using sudo.
+- Each action using sudo will be archived, both inputs and outputs. The log is located in the ``/var/log/sudo/folder``.
+- TTY mode will be activated for security reasons.
+- The paths that can be used by sudo will be restricted, again for questions of security. Example :
+``/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin``
+
+To do so we need to modify sudoers. Run ``sudo nano /etc/sudoers``:
+
+```nano
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+Defaults        passwd_tries=3
+Defaults        badpass_message="Password is wrong, please try again!"
+Defaults        logfile="/var/log/sudo/sudo.log"
+Defaults        log_input, log_output
+Defaults        requiretty
+```
+Why use ``tty``? If some non-root code is exploited (a PHP script, for example), the requiretty option means that the exploit code won't be able to directly upgrade its privileges by running sudo.)
+
+To save the log file we need to login as root and create the folder ``/var/log/sudo/``.
