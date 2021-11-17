@@ -20,7 +20,8 @@
 ## [Services](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md)
 - [SSH](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#ssh)
 - [UFW](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#ufw)
-- [libpam-pwquality](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#libpam-pwquality)
+- [Libpam-pwquality](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#libpam-pwquality)
+- [Crontab](https://github.com/MarJC5/Born2beroot/blob/main/doc/SERVICES.md#crontab)
 
 ## [User](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md)
 - [Sudo](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#add-sudo)
@@ -28,6 +29,9 @@
 - [Create user](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#create-user-and-group)
 - [Create group](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#create-user-and-group)
 - [Sudoers](https://github.com/MarJC5/Born2beroot/blob/main/doc/USER.md#configuring-sudoers-group)
+
+## [Monitoring](https://github.com/MarJC5/Born2beroot/blob/main/doc/MONITORING.md)
+- [Tasks](https://github.com/MarJC5/Born2beroot/blob/main/doc/MONITORING.md#tasks)
 
 ## [Bonus](https://github.com/MarJC5/Born2beroot/blob/main/doc/BONUS.md)
 - [LVM](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#server-structure)
