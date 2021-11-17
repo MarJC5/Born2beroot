@@ -46,10 +46,10 @@ Of course ``root`` password will have to follow this policy.
 sudo nano /etc/pam.d/common-password
 ```
 
-Fint the following line and add ``minlen=10`` at the end.
+Find the following line and add ``minlen=10`` at the end.
 
 ```nano
-password [success=2 default=ignore] pam_unix.so obscure sha512
+password [success=1 default=ignore] pam_unix.so obscure sha512
 ```
 
 To set at least one upper-case letter in the password, add a word ``ucredit=-1`` at the end of the following line.
