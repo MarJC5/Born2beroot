@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    monitoring.sh                                      :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jmartin <marvin@42lausanne.ch>             +#+  +:+       +#+         #
+#    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/11/15 11:54:27 by jmartin           #+#    #+#              #
-#    Updated: 2021/11/17 17:39:24 by jmartin          ###   ########.fr        #
+#    Created: 2021/11/17 22:24:34 by jmartin           #+#    #+#              #
+#    Updated: 2021/11/17 22:32:04 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

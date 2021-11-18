@@ -1,6 +1,7 @@
 # Environement installation
 
 ## Ressources
+
 1. [VirtualBox](https://www.virtualbox.org/)
 2. [Debia ISO](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/)
 
@@ -15,6 +16,7 @@
 ### Add ISO
 
 The ISO is simply the OS Image, for this project Debian is used.
+
 1. Select the VM and open "Settings"
 2. Select "Storage" and click on "Controller: IDE +"
 3. Choose the .iso file
@@ -49,6 +51,7 @@ The ISO is simply the OS Image, for this project Debian is used.
 | sda5 | crypt |
 
 To create partitions proceed the following:
+
 1. Select "Guided - use entire disk and set up encrypted LVM" and delete all current partition
 2. Setup Crypted disk, just delete all logical part in sda5
 3. Create manualy LVM by selecting "Create logical volume"
@@ -85,6 +88,7 @@ lsblk
 | [Crontab]() | File which contains the schedule of cron entries to be run and at specified times. |
 
 ### Connection to VM with SSH
+
 Add forward rule for VirtualBox
 
 1. Go to VirtualBox-> Choose the VM->Select Settings
