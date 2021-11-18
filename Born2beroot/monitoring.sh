@@ -12,10 +12,10 @@
 #!/bin/bash
 
 archi=$(uname -a)
+
 cpu=$(grep "physical id" /proc/cpuinfo | sort | uniq | wc -l)
 vcpu=$(grep "^processor" /proc/cpuinfo | wc -l)
 
-test=$(df -Bm | grep '^/dev/' | grep -v '/boot$' | awk '{ut += $3} {ft+= $2} END {printf("%d"), ut/ft*100}')
 ram_u=$(free --mega -t | awk -vORS=' ' '{print $3}' | awk '{print $2"M"}')
 ram_t=$(free --giga -t | awk -vORS=' ' '{print $2}' | awk '{print $2"G"}')
 ram_p=$(free -t | awk 'NR == 2 {$4=$3/$2*100; printf("%.1f%%"), $4}')
@@ -25,14 +25,18 @@ disk_t=$(df -h --output=size --total | awk 'END {print $1}')
 disk_p=$(df --total | grep 'total' | rev | cut -d ' ' -f 2 | rev)
 
 cpul=$(top -bn1 | grep '^%Cpu' | cut -c 9- | xargs | awk '{printf("%.1f%%"), $1 + $3}')
+
 boot=$(who -b | awk '{print $(NF-1) " " $(NF-0)'})
 
 lvmt=$(lsblk | grep "lvm" | wc -l)
 lvm=$(if [ $lvmt -eq 0 ]; then echo no; else echo yes; fi)
+
 tcp=$(netstat -a | grep 'ESTABLISHED' | wc -l)
 user=$(who | wc -l)
+
 ip=$(hostname -I)
 mac=$(sudo ifconfig | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')
+
 sudo=$(sudo grep 'COMMAND' /var/log/sudo/sudo.log | wc -l)
 
 wall "
