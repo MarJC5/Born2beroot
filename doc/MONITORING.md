@@ -14,3 +14,7 @@ The script should always be able to display the following information:
 - The number of users using the server.
 - The IPv4 address of your server and its MAC (Media Access Control) address.
 - The number of commands executed with the sudo program.
+
+Place monitoring.sh into ``/usr/local/bin/``.
+
+See the script [here](https://github.com/MarJC5/Born2beroot/blob/main/Born2beroot/monitoring.sh).
