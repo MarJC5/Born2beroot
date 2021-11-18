@@ -36,8 +36,10 @@
 ## [Monitoring](https://github.com/MarJC5/Born2beroot/blob/main/doc/MONITORING.md)
 
 - [Tasks](https://github.com/MarJC5/Born2beroot/blob/main/doc/MONITORING.md#tasks)
-- [monitoring.sh](https://github.com/MarJC5/Born2beroot/blob/main/Born2beroot/monitoring.sh)
+- [Monitoring script](https://github.com/MarJC5/Born2beroot/blob/main/Born2beroot/monitoring.sh)
 
 ## [Bonus](https://github.com/MarJC5/Born2beroot/blob/main/doc/BONUS.md)
 
 - [LVM](https://github.com/MarJC5/Born2beroot/blob/main/doc/INSTALLATION.md#server-structure)
+- [WordPress](https://github.com/MarJC5/Born2beroot/blob/main/doc/BONUS.md#wordpress)
+- [Cockpit](https://github.com/MarJC5/Born2beroot/blob/main/doc/BONUS.md#install-cockpit)
