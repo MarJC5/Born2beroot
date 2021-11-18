@@ -1,6 +1,9 @@
-# SSH
+# Services
 
-## Setup
+## SSH
+
+### Setup SSH
+
 To install OpenSSH we need to use the package manager ``apt``. First thing to do is to update it with the commande:
 
 ```shell
@@ -9,7 +12,8 @@ apt-get upgrade -y
 sudo apt install openssh-server
 ```
 
-## Servicer status
+### Servicer status
+
 To see if the service is currently running run:
 
 ```shell
@@ -22,7 +26,8 @@ To restart the service run:
 service ssh restart
 ```
 
-## Change server port
+### Change server port
+
 As we need to change the default ssh port from 22 to 4242, we need to change the config in ``/etc/ssh/sshd_config``:
 
 ```shell
@@ -37,10 +42,9 @@ sudo grep Port /etc/ssh/sshd_config #check if the change is right
 
 We need to remove the ssh privege to the root change the line as ``PermitRootLogin no #disabled`` in ``/etc/ssh/sshd_config``.
 
+## UFW
 
-# UFW
-
-## Setup
+### Setup UFW
 
 To install uwf do the follwing:
 
@@ -58,9 +62,10 @@ sudo ufw allow 4242
 sudo ufw delete <position number of port 22>
 ```
 
-# libpam-pwquality
+## libpam-pwquality
 
-## Setup
+### Setup libpam-pwquality
+
 Installing password quality checking library with:
 
 ```shell
