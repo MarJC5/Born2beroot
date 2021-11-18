@@ -238,7 +238,7 @@ Go on 127.0.0.1:80 to see the wordpress page :)
 
 PS: Don't forget to open the port ``9000`` and ``80`` on your``virtualbox settings -> network -> advance -> add rules``
 
-## 5. Install cockpit[.](https://www.youtube.com/watch?v=xw_fZKFqLpY)
+## Install cockpit[.](https://www.youtube.com/watch?v=xw_fZKFqLpY)
 
 Cockpit is a web-based graphical interface for servers, intended for everyone, especially those who are:
 The service on your server, point your web browser to: ``http://<your_virtual_host>:9090``
