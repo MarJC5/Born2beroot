@@ -26,6 +26,8 @@ disk_p=$(df --total | grep 'total' | rev | cut -d ' ' -f 2 | rev)
 
 cpul=$(top -bn1 | grep '^%Cpu' | cut -c 9- | xargs | awk '{printf("%.1f%%"), $1 + $3}')
 boot=$(who -b | awk '{print $(NF-1) " " $(NF-0)'})
+
+lvmt=$(lsblk | grep "lvm" | wc -l)
 lvm=$(if [ $lvmt -eq 0 ]; then echo no; else echo yes; fi)
 tcp=$(netstat -a | grep 'ESTABLISHED' | wc -l)
 user=$(who | wc -l)
