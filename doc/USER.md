@@ -84,6 +84,30 @@ PASS_WARN_AGE 7
 
 Change it like this:(max 30 days, min number of days(2) allowed before the modification, receive a notification before expiration at least 7 days before)
 
+To set maximum number of days between password change to existing users, you must run the following command:
+
+```shell
+sudo chage -M <days> <username>
+```
+
+To set minimum number of days between password change, run:
+
+```shell
+sudo chage -m <days> <username>
+```
+
+To set warning before password expires, run:
+
+```shell
+sudo chage -W <days> <username>
+```
+
+To display the password for the existing users, run:
+
+```shell
+sudo chage -l <username>
+```
+
 3. Reboot to apply all changes
 
 ## Create ``user`` and ``group``
