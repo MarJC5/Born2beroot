@@ -35,9 +35,9 @@ tcp=$(netstat -a | grep 'ESTABLISHED' | wc -l)
 user=$(who | wc -l)
 
 ip=$(hostname -I)
-mac=$(sudo ifconfig | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')
+mac=$(ip link show | awk '$1 == "link/ether" {print $2}')
 
-sudo=$(sudo grep 'COMMAND' /var/log/sudo/sudo.log | wc -l)
+sudo=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
 
 wall "
 #Architecture: $archi
