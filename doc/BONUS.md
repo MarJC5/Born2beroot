@@ -242,7 +242,7 @@ sudo systemctl restart lighttpd
 Now, open your web browser and go complete the installation.
 Go on 127.0.0.1:80 to see the wordpress page :)
 
-PS: Don't forget to open the port ``9000`` and ``80`` on your``virtualbox settings -> network -> advance -> add rules``
+PS: Don't forget to open the port ``9000`` on your``virtualbox settings -> network -> advance -> add rules``
 
 ## Install cockpit[.](https://www.youtube.com/watch?v=xw_fZKFqLpY)
 
@@ -260,6 +260,13 @@ sudo systemctl enable --now cockpit.socket
 #Open the firewall if necessary:
 sudo ufw allow cockpit
 sudo ufw allow 9090
+```
+
+Remove login as root:
+In ``/etc/pam.d/cockpit`` have this as the first line:
+
+```shell
+auth requisite pam_succeed_if.so uid >= 1000
 ```
 
 Don't forget to open the port ``9090`` on your ``virtualbox settings -> network -> advance -> add rules``
