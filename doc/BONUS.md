@@ -165,6 +165,12 @@ QUIT;
 
 ### 4. Install WordPress
 
+For example, install wget using the apt-get command/apt command command line as follows:
+
+```shell
+sudo apt-get install wget
+```
+
 Move to the path ``/tmp`` and run
 
 ```shell
