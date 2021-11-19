@@ -157,7 +157,7 @@ Create Wordpress Database
 ```shell
 sudo mysql -u root -p
 
-CREATE DATABASE <wordpress_database_name>;
+CREATE DATABASE wordpress;
 GRANT ALL PRIVILEGES ON wordpressdb.* to <wordpress_username>@localhost identified by '<wordpress_user_password>';
 FLUSH PRIVILEGES;
 QUIT;
