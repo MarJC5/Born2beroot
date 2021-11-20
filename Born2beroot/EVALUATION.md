@@ -61,7 +61,7 @@ administrators, a secure way to access a computer over an unsecured network.
 | 5)  sudo service ssh status           5 <- ssh status, yep
 | 6)  sudo ufw status                   6 <- ufw status
 | 7)  ssh username@ipadress -p 4242     7 <- connect to VM from your host (physical) machine via SSH
-| 8)  nano /etc/sudoers.d/<filename>    8 <- yes, sudo config file. You can $ ls /etc/sudoers.d first
+| 8)  nano /etc/sudoers/<filename>    8 <- yes, sudo config file. You can $ ls /etc/sudoers first
 | 9)  nano /etc/login.defs              9 <- password expire policy
 | 10) nano /etc/pam.d/common-password  10 <- password policy
 | 11) sudo crontab -l                  11 <- cron schedule
