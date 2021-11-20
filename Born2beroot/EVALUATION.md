@@ -101,3 +101,13 @@ sudo crontab -e
 ```
 
 To stop script running on boot you just need to remove or commit line in crontab file.
+
+## Bonus
+
+### WordPress
+
+Website url -> [http://127.0.0.1:9001/born2beroot/](http://127.0.0.1:9001/born2beroot/)
+
+### Cockpit-project
+
+Portal url -> [http://127.0.0.1:9090/system](http://127.0.0.1:9090/system)
